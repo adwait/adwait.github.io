@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+### About
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I am Adwait Godbole, and I am a fourth year undergraduate at IIT Bombay in the Department of Computer Science and Engineering. My interests lie in Program Analysis and Verification, Probabilistic Models, Algorithms and Optimization.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[adwaitg@cse.iitb.ac.in](mailto:adwaitg@cse.iitb.ac.in)
