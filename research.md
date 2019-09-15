@@ -14,13 +14,17 @@ In particular I have studied and worked on problems related to Markov Chains, MD
 
 * Controlling a population<sup>&dagger;</sup><br/>
 Nathalie Bertrand, Miheer Dewaskar, Blaise Genest, Hugo Gimbert, **Adwait Godbole**<br/>
-*Logical Methods in Computer Science, Jul, 2019 - Volume 15, Issue 3*<br/>
-\[[pdf](https://arxiv.org/pdf/1807.00893.pdf)\] 
+*Logical Methods in Computer Science, Jul, 2019 - Volume 15, Issue 3*
+\[[pdf](https://arxiv.org/pdf/1807.00893.pdf)\]
+<br/>
 <!-- \[[code](link)\] -->
-[Here](https://ag1502.github.io/popcon.html) are a some slides for an overview.  
+[Here](https://ag1502.github.io/popcon.html) are some slides for an overview of the work.
+
 
 <sup>&dagger;</sup>*Authors' names in alphabetical order* 
 
+<br>
+Thanks to [Nathanael Fijalkow](https://nathanael-fijalkow.github.io/?page=flides) for the slide template.
 <!-- 
 ### Contact me
 
