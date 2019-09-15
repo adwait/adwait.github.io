@@ -14,9 +14,10 @@ In particular I have studied and worked on problems related to Markov Chains, MD
 
 * Controlling a population<sup>&dagger;</sup><br/>
 Nathalie Bertrand, Miheer Dewaskar, Blaise Genest, Hugo Gimbert, **Adwait Godbole**<br/>
-<!-- *Proceedings of [ACL 2019](http://www.acl2019.org/EN/index.xhtml), Florence, Italy*<br/> -->
+*Logical Methods in Computer Science, Jul, 2019 - Volume 15, Issue 3*<br/>
 \[[pdf](https://arxiv.org/pdf/1807.00893.pdf)\] 
-<!-- \[[code](https://github.com/jiangycTarheel/EPAr)\] -->
+<!-- \[[code](link)\] -->
+[Here](https://ag1502.github.io/popcon.html) are a some slides for an overview.  
 
 <sup>&dagger;</sup>*Authors' names in alphabetical order* 
 
