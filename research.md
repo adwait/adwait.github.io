@@ -24,8 +24,21 @@ Nathalie Bertrand, Miheer Dewaskar, Blaise Genest, Hugo Gimbert, **Adwait Godbol
 <sup>&dagger;</sup>*Authors' names in alphabetical order* 
 
 <br>
-Thanks to [Nathanael Fijalkow](https://nathanael-fijalkow.github.io/?page=flides) for the slide template.
-<!-- 
+
+### Seminar Presentations, Reports
+
+* [PCP Theorem and Hardness of Approximation](https://ag1502.github.io/slides/PCP-Hardness_Presentation.pdf)
+(Seminar Presentation)
+
+* [Well Structured Transition Systems](https://ag1502.github.io/slides/WSTS.pdf)
+(Seminar Presentation)
+
+* [Topics in Probabilistic Verification](https://ag1502.github.io/slides/Report.pdf)
+(Project Report)
+
+<br>
+Thanks to [Nathanael Fijalkow](https://nathanael-fijalkow.github.io/?page=flides) for the Flides template.
+
 ### Contact me
 
-[adwaitg@cse.iitb.ac.in](mailto:adwaitg@cse.iitb.ac.in) -->
+[adwaitg@cse.iitb.ac.in](mailto:adwaitg@cse.iitb.ac.in)
