@@ -6,8 +6,10 @@ permalink: /about/
 <!-- 
 ### About
  -->
-I am Adwait Godbole, a fourth year undergraduate at IIT Bombay in the Department of Computer Science and Engineering. My interests lie in Program Analysis and Verification, Probabilistic Models, Algorithms and Optimization.
+I am Adwait, a fourth year undergraduate student at IIT Bombay in the Department of Computer Science and Engineering. 
+
 
 ### Contact me
 
-[adwaitg@cse.iitb.ac.in](mailto:adwaitg@cse.iitb.ac.in)
+Email [godbole15 at gmail.com](mailto:godbole15@gmail.com)
+CSE Dept Mail [adwaitg at cse.iitb.ac.in](mailto:adwaitg@cse.iitb.ac.in)
