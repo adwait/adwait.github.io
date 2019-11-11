@@ -33,11 +33,11 @@ Nathalie Bertrand, Miheer Dewaskar, Blaise Genest, Hugo Gimbert, **Adwait Godbol
 
 ### Seminar Presentations, Reports
 
-* Decidable Toplogies [[slides](https://ag1502.github.io/slides/Decidable_Topologies.pdf), [report](https://ag1502.github.io/slides/DecidableTopologies)] (Seminar Presentation)
+* Decidable Toplogies [[slides](https://ag1502.github.io/slides/Decidable_Topologies.pdf), [report](https://ag1502.github.io/slides/DecidableTopologies.pdf)] (Seminar Presentation)
 
 * Top-k Arm Selection [[slides](https://ag1502.github.io/slides/Top_k_Arm_Selection.pdf)] (Research Project)
 
-* PCP Theorem and Hardness of Approximation [[slides](https://ag1502.github.io/slides/PCP_and_HoA_.pdf)]
+* PCP Theorem and Hardness of Approximation [[slides](https://ag1502.github.io/slides/PCP_and_HoA.pdf)]
 (Seminar Presentation)
 
 * Well Structured Transition Systems [[slides](https://ag1502.github.io/slides/WSTS.pdf)]
