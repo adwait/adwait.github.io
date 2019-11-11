@@ -5,9 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>Controlling  a Population - Adwait Godbole</title>
+    <title>Weak Memory Models - Adwait Godbole</title>
     
-    <meta name="description" content="Controlling a Poplulation" />
+    <meta name="description" content="Modelling Relaxed Accesses" />
     <meta name="author" content="Adwait Godbole" />
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
@@ -22,7 +22,7 @@
     <!-- A slide is a div with class "step". It is located by data-x, data-y, data-z (if you like 3D) and data-scale -->
     <!-- data-duration="0" means that when going to this slide, one does not have the zoom effect -->
     <div id="title" class="step" data-duration="0" data-x="-1000" data-y="-500">
-	<h2>Controlling a Population</h2>
+	<h2>Modelling Relaxed Accesses</h2>
 
 	<br/>
 
@@ -35,26 +35,56 @@
 	<br/>
 
 	<div class="slide_step">
-	Internship work at Inria, Rennes in Summer of 2018
-	under guidance of Prof. Blaise Genest
+	Work at IIT Bombay and Uppsala University, Sweden
+	under guidance of Profs. Krishna S., Parosh Abdulla and Faouzi Atig
 
-	<img src="">
+	<!-- <img src=""> -->
 	</div>
     </div>
 
-    <div id="navigation" class="step" data-x="0" data-y="-400">
-	<h2>Setting</h2>
+	<div id="navigation" class="step" data-x="0" data-y="-400">
+		<h3>Concurrent Programs</h3>
+	
+		<br/>
+	
+		<div>A concurrent program has a set of processes $\mathcal{P}$ operating parallely</div>
+		<br/>
+		<div class="slide_step">
+		The processes have a local state and share a set of global variables $\mathcal{X}$</div>
+		<br/>
+	
+		<div class="slide_step">
+		Processes may switch in and out of context (take turns on the CPU) possibly non-deterministically
+		</div>
+	
+		<br/>
+	
+		<div class="slide_step">
+		
+		</div>
+	
+		<br/>
+	
+		<div class="slide_step">
+		<b>Population control problem</b> - can Controller synchronize $m$-Agents for arbitrary $m$; irrespective of choice of (non-deterministic) transitions Agents chooses?</i>
+		</div>
+	</div>
+
+    <!-- <div id="navigation" class="step" data-x="970" data-y="-400">
+	<h3>Concurrent Processes</h3>
 
 	<br/>
 
 	<div class="slide_step">
-	Population of agents modelled as finite-state systems - NFAs - need to be synchronized into a sink state
+	In the program below, can process P1 read $a = 1$?
+	<image height="200" src="flides_img/prog.png">
+	Depends on how reads and writes are defined? When is a process allowed to read (write) a particular value?
 	</div>
 	
 	<br/>
 
 	<div class="slide_step">
-	System represented as a game; first player (Controller) chooses actions uniformly - Controller must apply same action to all agents - and second player (Agents) makes non-deterministic choice for each agent 
+	
 	</div>
 
 	<br/>
@@ -68,7 +98,7 @@
 	<div class="slide_step">
 	<b>Population control problem</b> - can Controller synchronize $m$-Agents for arbitrary $m$; irrespective of choice of (non-deterministic) transitions Agents chooses?</i>
 	</div>
-    </div>
+    </div> -->
 
 <!--     <div id="automata" class="step unclickable" data-x="1000" data-y="-250">
 	<h2>Example</h2>
@@ -80,7 +110,7 @@
 	<h3>MathJax produces maths: &nbsp;&nbsp; $f : A^* \to \mathbb{N} \cup \{ \infty \}$</h3>
     </div> -->
 
-    <div id="automata_counters" class="step" data-x="970" data-y="-200" >
+    <!-- <div id="automata_counters" class="step" data-x="970" data-y="-200" >
 	<h2>Animations</h2>
 
 	<div class="slide_step">
@@ -147,22 +177,20 @@
 	Clearly run 1 was winning for the Controller but run 2 was not. Hence $\pi = aba$ is not a winning strategy for Controller. (Trivially though $\pi = \epsilon$ is.)
 	</div>
 	
-	<!-- <h3>Use SVG, it's cool!</h3> -->
-	</div>
+	
+	</div> -->
 
 
 
     <div id="before_last" class="step" data-x="-1020" data-y="200">
-	<h2>Overview of results</h2>
+	<h3>Verification of programs</h3>
 	
 	<br/>
 	<div class="slide_step">
 	<ul>
-		<li>The population control problem is $\mathrm{EXPTIME}$-complete</li>
-		<li>In case the system $\mathcal{A}$ is synchronizable, the synchronization time (worst case number of actions to be performed) is ${\color{blue} {polynomial}}$ in the number of agents and ${\color{red} {exponential}}$ in the size (number of states) of $\mathcal{A}$. These bounds are tight upto a constant factor in the exponent.
+		<li>The control state reachability problem asks, a concurrent program $\mathcal{P}$ under a particular memory model, with processes, ,$p_1$, $p_2$, ..., $p_k$, is the control state $(\lambda_1, \lambda_2, \cdots, \lambda_k)$ reachable?
 		</li>
-		<li>Hence the algorithm proposed is optimal
-		</li>
+		<img height="100" width="30" src="flides_img/prog.png">
 	</ul>
 	</div>
 
