@@ -8,7 +8,7 @@ permalink: /research/
 
 My interests lie in theoretical aspects of Programming Languages, Verification, Probabilistic Systems, Algorithms and Optimization.
 
-Currently I am working on problems related to linear and probabilistic systems as a part of my Bachelor's thesis under the guidance of Prof. [S. Akshay](https://www.cse.iitb.ac.in/~akshayss/). I am also working on complexity of problems in the area of graph database queries under Prof. [S. Krishna](https://www.cse.iitb.ac.in/~krishnas/).
+Currently I am working on problems related to linear and probabilistic systems as a part of my Bachelor's thesis under the guidance of Prof. [S. Akshay](https://www.cse.iitb.ac.in/~akshayss/). I am also working on complexity of problems in the area of graph database queries under Prof. [Krishna S.](https://www.cse.iitb.ac.in/~krishnas/).
 
 During my third year I have worked on problems relating to weak memory models that define the semantics for memory accesses in multi-threaded programs. I interned at Uppsala University in the summer of 2019 and was fortunate to be advised by Prof. [Parosh Abdulla](http://user.it.uu.se/~parosh/) and Prof. [Faouzi Atig](http://www.it.uu.se/katalog/mohat117/atig). There I worked on theoretical problems and developed a model checker for verifying programs
 
