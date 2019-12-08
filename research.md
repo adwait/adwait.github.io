@@ -51,4 +51,4 @@ Thanks to [Nathanael Fijalkow](https://nathanael-fijalkow.github.io/?page=flides
 
 ### Contact me
 
-[adwaitg@cse.iitb.ac.in](mailto:adwaitg@cse.iitb.ac.in)
+[adwaitg at cse.iitb.ac.in](mailto:adwaitg@cse.iitb.ac.in)
