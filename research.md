@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 ---
 
-### Research
+### Projects
 
 My interests lie in theoretical aspects of Programming Languages, Verification, Probabilistic Systems, Algorithms and Optimization.
 
