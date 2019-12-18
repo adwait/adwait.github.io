@@ -25,8 +25,8 @@ Nathalie Bertrand, Miheer Dewaskar, Blaise Genest, Hugo Gimbert, **Adwait Godbol
 
 ### Ongoing
 
-> <strong>Parametrized Verification of Concurrent Programs</strong><br><i>With Prof. [Krishna S.](https://www.cse.iitb.ac.in/~krishnas/), Prof. [Parosh Abdulla](http://user.it.uu.se/~parosh/) and Prof. [Faouzi Atig](http://www.it.uu.se/katalog/mohat117/atig)</i><br>
->>Working on developing efficient verification techniques for concurrent programs in the paramterized setting (where the number of processes is arbitrary).
+<blockquote> <strong>Parametrized Verification of Concurrent Programs</strong><br><i>With Prof. [Krishna S.](https://www.cse.iitb.ac.in/~krishnas/), Prof. [Parosh Abdulla](http://user.it.uu.se/~parosh/) and Prof. [Faouzi Atig](http://www.it.uu.se/katalog/mohat117/atig)</i><br>
+Working on developing efficient verification techniques for concurrent programs in the paramterized setting (where the number of processes is arbitrary).</blockquote> 
 
 <br>
 
