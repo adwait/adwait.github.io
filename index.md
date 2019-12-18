@@ -9,3 +9,11 @@ My main interests lie in Programming Languages, Verification and Formal Methods.
 I am also interested in Algorithms and Probabilistic Systems.
 
 I visited Uppsala University in Summer 2019 and was fortunate to be advised by Prof. Parosh Abdulla and Prof. Faouzi Atig. In Summer 2018, I interned at INRIA, Rennes under the guidance of Prof. Blaise Genest and Prof. Nathalie Bertrand. 
+
+<hr>
+
+#### Contact
+
+Email [godbole15 at gmail.com](mailto:godbole15@gmail.com)
+<br>
+CSE Dept Mail [adwaitg at cse.iitb.ac.in](mailto:adwaitg@cse.iitb.ac.in)

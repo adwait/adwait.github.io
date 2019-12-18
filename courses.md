@@ -13,6 +13,11 @@ permalink: /courses/
 >>We studied variants of the Top-k arm selection problem in the multi-armed bandit setting with Bernoulli bandits. We suggested an alternative stopping criterion and proved better bounds on sample complexity in the
 PAC framework. These theoretical results were verified by experiments on a suite of bandit instances. 
 
+> <strong>MARL with Communication</strong> [[slides](https://ag1502.github.io/docs/fila_report.pdf)]
+<br>Advanced Concentration Inequalities<br>
+>>We studied variants of the Top-k arm selection problem in the multi-armed bandit setting with Bernoulli bandits. We suggested an alternative stopping criterion and proved better bounds on sample complexity in the
+PAC framework. These theoretical results were verified by experiments on a suite of bandit instances. 
+
 > <strong>Congruence Domain for Abstraction based Program Analysis</strong> 
 <br>Formal Specification and Verification course Verification<br>
 >>We added a functionality to the abstract interpretation based CAnalyzer tool developed at IIT, Bombay. We implemented the congruence domain for distance bound matrices (DBMs). This domain represents constraints of the form  ```  [x + y (mod m)]```.
@@ -23,9 +28,16 @@ PAC framework. These theoretical results were verified by experiments on a suite
 
 > <strong>Railway Signalling Controller</strong> [[code](https://github.com/ag1502/Digital-Logic-Design-Lab)]
 <br>Digital Logic Design Lab<br>
->>We developed a controller for a reailway signalling system that takes into account the state of surrounding tracks, signals and trains. The main part of the project was establishing asynchrounous communication between the [Spartan6 FPGA](https://www.xilinx.com/products/silicon-devices/fpga/spartan-6.html) and a backend computer which held the database. This was done using [UART](https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter) and FPGALink channels.
+>>We developed a controller for a railway signalling system that takes into account the state of surrounding tracks, signals and trains. The main part of the project was establishing asynchrounous communication between the [Spartan6 FPGA](https://www.xilinx.com/products/silicon-devices/fpga/spartan-6.html) and a backend computer which held the database. This was done using [UART](https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter) and FPGALink channels.
 
+> <strong>BiSym - A Biological Simulator</strong> [[code](https://github.com/ag1502/Digital-Logic-Design-Lab)]
+<br>Programming Paradigms<br>
+>>We built a simulation environment in Racket that models cells with different attributes. We are able to observe evolution of traits phenomena such as dominant traits.
 
-### Contact me
+<hr>
 
-[adwaitg@cse.iitb.ac.in](mailto:adwaitg@cse.iitb.ac.in)
+#### Contact
+
+Email [godbole15 at gmail.com](mailto:godbole15@gmail.com)
+<br>
+CSE Dept Mail [adwaitg at cse.iitb.ac.in](mailto:adwaitg@cse.iitb.ac.in)
