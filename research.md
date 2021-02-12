@@ -17,7 +17,7 @@ Nathalie Bertrand, Miheer Dewaskar, Blaise Genest, Hugo Gimbert, **Adwait Godbol
 <br/>
 <!-- \[[code](link)\] -->
 <!-- [Here](https://ag1502.github.io/popcon.html) are some slides for an overview of the work. -->
-<sup>&dagger;</sup>*Authors' names in alphabetical order* 
+
 
 ## Seminar Presentations, Reports
 
