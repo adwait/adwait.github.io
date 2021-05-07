@@ -11,7 +11,7 @@ I am also interested in Security and Probabilistic Systems.
 
 <hr>
 
-## Publications<a href="research">.</a>
+## Publications<a id="sec-research"></a>
 
 [DBLP](https://dblp.org/pid/260/7068.html) <br/>
 
