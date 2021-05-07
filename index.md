@@ -49,9 +49,9 @@ Nathalie Bertrand, Miheer Dewaskar, Blaise Genest, Hugo Gimbert, Adwait Godbole<
 
 
 
-<!-- #### Contact -->
+#### Contact
 
-<!-- Email [godbole15 at gmail.com](mailto:godbole15@gmail.com)
-<br>
+Email \_first_name\_@berkeley.edu
+<!-- <br>
 CSE Dept Mail [adwaitg at cse.iitb.ac.in](mailto:adwaitg@cse.iitb.ac.in)
  -->
