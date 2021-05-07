@@ -6,20 +6,31 @@ permalink: /research/
 
 <!-- ### Research -->
 
-My main interests lie in Programming Languages, Verification, and Formal Methods.
+<!-- My main interests lie in Verification, and Formal Methods. -->
 
-## Publication
+## Publications 
 
-* Controlling a population<sup>&dagger;</sup><br/>
-Nathalie Bertrand, Miheer Dewaskar, Blaise Genest, Hugo Gimbert, **Adwait Godbole**<br/>
-*Logical Methods in Computer Science, Jul, 2019 - Volume 15, Issue 3*
+[DBLP](https://dblp.org/pid/260/7068.html) <br/>
+
+* The Decidability of Verification under PS 2.0.<br/>
+Parosh Aziz Abdulla, Mohamed Faouzi Atig, Adwait Godbole, Shankara Narayanan Krishna, Viktor Vafeiadis<br/>
+*ESOP 2021* [[paper](https://rd.springer.com/chapter/10.1007%2F978-3-030-72019-3_1)]
+
+
+* Containment of Simple Regular Path Queries<br/>
+Diego Figueira, Adwait Godbole, S. Krishna, Wim Martens, Matthias Niewerth, Tina Trautner<br/>
+*KR 2020* [[paper](https://proceedings.kr.org/2020/38/)]
+
+* Controlling a population<br/>
+Nathalie Bertrand, Miheer Dewaskar, Blaise Genest, Hugo Gimbert, Adwait Godbole<br/>
+*LMCS, Jul, 2019*
 [[paper](https://arxiv.org/pdf/1807.00893.pdf)] [[fun slides](https://ag1502.github.io/popcon.html)]
 <br/>
 <!-- \[[code](link)\] -->
 <!-- [Here](https://ag1502.github.io/popcon.html) are some slides for an overview of the work. -->
 
 
-## Seminar Presentations, Reports
+## Presentation Slides
 
 * Decidable Toplogies [[slides](https://ag1502.github.io/slides/Decidable_Topologies.pdf), [report](https://ag1502.github.io/slides/DecidableTopologies.pdf)] (Seminar Presentation)
 

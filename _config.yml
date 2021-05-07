@@ -6,10 +6,10 @@
 name: Adwait Godbole
 
 # Short bio or description (displayed in the header)
-description: Computer Science Undergraduate, IIT Bombay
+description: Graduate Student, UC Berkeley
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/ag1502/ag1502.github.io/master/images/profile.jpg
+avatar: https://raw.githubusercontent.com/adwait/adwait.github.io/master/images/profile.jpg
 
 #
 # Flags below are optional
@@ -18,12 +18,12 @@ avatar: https://raw.githubusercontent.com/ag1502/ag1502.github.io/master/images/
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: godbole15@gmail.com
+  email:
   facebook:
   flickr:
-  github: ag1502
+  github: adwait
   instagram:
-  linkedin: adwait-godbole-b995a5134
+  linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: 

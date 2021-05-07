@@ -1,12 +1,12 @@
 ---
 layout: page
-title: About
+title: Misc
 permalink: /about/
 ---
 <!-- 
 ### About
  -->
-I am Adwait, a fourth year undergraduate student at IIT Bombay in the Department of Computer Science and Engineering. I have a fondness for Algorithms and Logic.
+I am Adwait, a first year graduate student in EECS at UC Berkeley. I have a fondness for Algorithms and Logic.
 
 I enjoy outdoor activities - cycling and trekking - and indoor activities too - I [read](https://www.goodreads.com/review/list/104776623), play [chess](https://www.youtube.com/watch?v=AaKWUiiEHgA) and [the](https://www.youtube.com/watch?v=O2K0ptoYpuc) [Tabla](https://www.youtube.com/watch?v=mmiThgzYX5E). I also [swim](https://gymkhana.iitb.ac.in/~sports/index.php?r=aquatics).
 
@@ -14,6 +14,6 @@ I enjoy outdoor activities - cycling and trekking - and indoor activities too - 
 
 #### Contact
 
-Email [godbole15 at gmail.com](mailto:godbole15@gmail.com)
+<!-- Email [godbole15 at gmail.com](mailto:godbole15@gmail.com)
 <br>
-CSE Dept Mail [adwaitg at cse.iitb.ac.in](mailto:adwaitg@cse.iitb.ac.in)
+CSE Dept Mail [adwaitg at cse.iitb.ac.in](mailto:adwaitg@cse.iitb.ac.in) -->
