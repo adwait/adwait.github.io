@@ -1,0 +1,3 @@
+[submodule "webpage-generator"]
+	path = webpage-generator
+	url = git@github.com:adwait/webpage-generator.git
