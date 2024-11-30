@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>descent.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
+</script>
+<h1 id="the-method-of-infinite-descent">The Method of Infinite Descent</h1>
+<blockquote>
+<p><a href="https://mathcircle.berkeley.edu/">Berkeley Math Circle</a> Intermediate II | Adwait Godbole | 13th Nov 2024</p>
+</blockquote>
+<h2 id="warmup-the-numbers">Warmup: the numbers.</h2>
+<ol start="0">
+<li>
+<p>What are integers, natural numbers, rational numbers, irrational numbers?</p>
+</li>
+<li>
+<p>Prove that $\sqrt{2}$ is irrational.</p>
+<p><strong>Proof</strong> (fill in the blanks).</p>
+<blockquote>
+<p>We will do a proof by ___________________. Suppose that $\sqrt{2}$ is rational. Then, there exist integers $a$ and $b$ such that $\sqrt{2} = $ _____________ (Eq. 1). We can assume that $a$ <strong>is the smallest such number</strong>. Squaring both sides of Eq. 1, we get $2 = $ _____________, and hence, $a^2 = 2b^2$ (Eq. 2). This means that $a^2$ is even, and hence $a$ is _________. Let $a = 2k$. Substituting this back in Eq. 2, we get _____________. This implies that $b^2$ is even, and hence $b$ is even. Let $b = 2l$. Then $\sqrt{2} = \frac{a}{b} = \frac{2k}{2l} = \frac{k}{l}$. This contradicts our assumption that ___________________ (why?).</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="infinite-descent">Infinite Descent</h2>
+<ol start="0">
+<li>
+<p><strong>Going down the number line.</strong> Which of these statements are true? Can you prove/disprove them?</p>
+<ul>
+<li><strong>S1</strong>: Suppose you have <em>integers</em> $a_1, a_2, a_3, \ldots, a_n$ for some $n$ such that $a_i &gt; a_{i+1}$. Then it cannot be that all the numbers are non-negative.</li>
+<li><strong>S2</strong>: Suppose you have <em>integers</em> $a_1, a_2, a_3, \ldots$ to infinity such that $a_i &gt; a_{i+1}$. Then it cannot be that all the numbers are non-negative.</li>
+<li><strong>S3</strong>: Suppose you have <em>rational</em> numbers $a_1, a_2, a_3, \ldots$ to infinity such that $a_i &gt; a_{i+1}$. Then it cannot be that all the numbers are non-negative.</li>
+</ul>
+</li>
+<li>
+<p><strong>Well-ordering principle</strong>: Every non-empty set $S$ of non-negative integers has a smallest element.</p>
+<p><strong>Proof</strong> (fill in the blanks).</p>
+<blockquote>
+<p>Proof by contradiction. Suppose $S$ has no least element, and let $J$ is the set of numbers not in $S$. We will prove by induction that $J = \mathbb{N}$. Base case: Since _______ is the smallest non-negative integer, $0 \not\in S$, and hence, ________________. Inductive case: Now suppose that $0, 1, \cdots, n \in J$. Then, we know that $n+1 \not\in$ _______ due to our assumption that ___________________________________. Hence, ________________. This proves that $J = \mathbb{N}$. But this implies that _________________________, which is a contradiction. Hence, $S$ has a least element.</p>
+</blockquote>
+</li>
+</ol>
+<hr>
+<h3 id="the-method-of-infinite-descent"><strong>The Method of Infinite Descent</strong>:</h3>
+<blockquote>
+<p>Infinite descent is a proof technique that is used to prove that <em>a certain property does not hold</em> for a set of well-ordered numbers. We assume that the property holds for some number within that set, and then show that it also holds for a smaller number. Then, by the well ordering principle, we get a contradiction. This contradiction implies that the property does not hold for any number in the set.</p>
+</blockquote>
+<hr>
+<h2 id="more-examples-of-infinite-descent-resource1-resource2">More examples of Infinite Descent (<a href="https://artofproblemsolving.com/wiki/index.php/Infinite_Descent">resource1</a>, <a href="https://www.math.uci.edu/~ndonalds/math180b/5descent.pdf">resource2</a>)</h2>
+<h3 id="diophantine-equations">Diophantine Equations</h3>
+<ol start="0">
+<li>
+<p>Prove that the equation $x^3 + 3y^3 + 9z^3 = 0$ has no positive integer solutions.</p>
+<p><strong>Proof</strong> (fill in the blanks).</p>
+<blockquote>
+<p>Suppose that there is a positive integer solution. Consider $(x, y, z)$ to be such a solution. Then, we know that $3$ divides _____, let $x = 3k$. Then, we have, $27k^3 + 3y^3 + 9y^3 = 0$ and, dividing by 3, _____________________________. Hence $3$ divides _____. Let $y = 3l$. Substituting this back and dividing by 3, we get _____________________________. This implies that $3$ divides _____. Let $z = 3m$. Substituting this back and dividing by 3 <em>again</em>, we get _____________________________, which means that $(k, l, m)$ is also a solution. But, $(k, l, m)$ is a _____________ solution than $(x, y, z)$. Hence, we get an infinite _____________, which is a contradiction.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Side note:</strong> These are Diophantine equations (<a href="http://www.fen.bilkent.edu.tr/~franz/nt/ch5.pdf">notes</a>). A Diophantine equation is an equation where the unknowns are required to be integers. The name comes from the Greek mathematician Diophantus, who studied such equations. Can you write irrationality of $\sqrt{2}$ as a Diophantine equation with no (integer) solutions?</p>
+<ol>
+<li>
+<p>Prove that the equation $x^2 + y^2 = 3z^2$ has no <em>non-trivial</em> integer solutions.</p>
+</li>
+<li>
+<p><strong>Fermat's Last Theorem</strong> (<a href="https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem">Wikipedia article</a>): There are no integer solutions to the equation $x^n + y^n = z^n$ for $n &gt; 2$. <em>Warning</em>: This is a very very hard problem!.</p>
+</li>
+<li>
+<p><strong>Fermat's Last Theorem Mini</strong>: There are no non-trivial integer solutions to the equation $x^4 + y^4 = z^4$. This is an easy special case of Fermat's Last Theorem.</p>
+</li>
+</ol>
+<h3 id="non-algebraic-examples-of-infinite-descent-more-problems">Non-algebraic examples of Infinite Descent (<a href="https://www.math.hkust.edu.hk/excalibur//v10_n4.pdf">more problems</a>)</h3>
+<ol start="4">
+<li>
+<p>(Sylvester's Problem) There are $n$ points in the plane such that every pair of two points has another point that is collinear with them. Prove that all the points are collinear.</p>
+</li>
+<li>
+<p>Consider triangle $ABC$. A perpendicular is drawn from $A$ to $BC$ at $A_1$. A perpendicular is drawn from $A_1$ to $AC$ at $B_1$. A perpendicular is drawn from $B_1$ to $AB$ at $C_1$. This process is repeated to get points $A_2$, $B_2$, $C_2$, and so on. Prove that all the points $A_i$, $B_i$, $C_i$ are distinct.</p>
+</li>
+</ol>
+<h3 id="vieta-root-jumping-notes-on-vieta-root-jumpingflipping">Vieta Root Jumping (<a href="https://blogs.sch.gr/sotskot/files/2011/01/Vieta_Jumping.pdf">notes on Vieta Root Jumping/Flipping</a>)</h3>
+<ol start="6">
+<li><strong>IMO 1988 P6:</strong> Let $a$ and $b$ be positive integers such that $ab + 1$ divides $a^2 + b^2$. Show that $\frac{a^2 + b^2}{ab+1}$ is the square of an integer.</li>
+</ol>
+<p>Arthur Engel (<a href="https://mathematicalolympiads.wordpress.com/wp-content/uploads/2012/08/75427434-problem-books-in-mathematics-problem-solving-strategies.pdf">Problem Solving Strategies: an awesome problem book by Engel</a>) writes about the problem:</p>
+<blockquote>
+<p>Nobody of the six members of the Australian problem committee could solve it ... Since it was a number theoretic problem it was sent to the four most renowned Australian number theorists. They were asked to work on it for six hours. None of them could solve it in this time ...  The problem committee submitted it to the jury of the 29th IMO marked with a double asterisk, which meant a superhard problem, possibly too hard to pose. After a long discussion, the jury finally had the courage to choose it as the last problem of the competition. Eleven students gave perfect solutions.</p>
+</blockquote>
+
+</body>
+</html>

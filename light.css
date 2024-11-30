@@ -1,9 +1,9 @@
 header {
-    background-color: #1CA3D1;
+    background-color: #D8BA6B;
 }
 
 #scroller {
-    background-color: #D14A1C;
+    background-color: #8b726b;
 }
 
 body {
@@ -22,17 +22,18 @@ h3 {
 }
 
 a {
-    color: #1CA3D1;
+    color: #8b726b;
+    /* #837474; */
 }
 
 a:hover {
-    color: #D14A1C;
+    color: #D8BA6B;
 }
 
 .hbar {
-    color: #003362;
+    color: #3d4248;
 }
 
 h3 {
-    border-bottom: 1px #003362 dashed;
+    border-bottom: 1px #3d4248 dashed;
 }
