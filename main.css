@@ -298,3 +298,9 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+.superscript {
+    vertical-align: super;
+    font-size: smaller;
+    /* color: red; Example styling */
+}
