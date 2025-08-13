@@ -120,8 +120,9 @@ a {
 }
 
 .news-item {
-    font-size: smaller;
+    font-size: normal;
     display: flex;
+    align-items: flex-start;
     padding-top: 0.5em;
 }
 
@@ -143,6 +144,10 @@ a {
 
 .news-right {
     width: calc(100% - 12%);
+}
+
+.news-right p {
+    padding-top: 0;
 }
 
 .paper-icons {
